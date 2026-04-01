@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1f2039;
+  color: white;
+}
+
+/* NAVBAR */
+header {
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  color: #a5b4fc;
+}
+
+/* INTRO */
+.accueil-introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.accueil-introduction p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.profile-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 60% / 50%;
+  object-fit: cover;
+}
+
+/* BUTTON */
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(#8e86b5, #acaeed);
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+/* PROJECTS */
+.accueil-photos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project {
+  background: #2a2b4a;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* CONTACT */
+.section-contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    order: 3;
+  }
+  nav img {
+    margin-top: 10px;
+  }
+  nav h1 {
+    order: 3;
+    margin-top: 20px;
+  }
+
+  .accueil-introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accueil-introduction div {
+    padding-right: 0;
+    text-align: center;
+    order: 2;
+  }
+
+  .accueil-introduction img {
+    order: 1;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
